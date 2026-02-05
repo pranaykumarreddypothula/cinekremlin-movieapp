@@ -13,7 +13,7 @@ function getMovie(){
         result.innerText = "Please enter a movie name";
         return
     }
-    let apiKey = "217430e3";
+    let apiKey = "LET_YOUR_API_KEY"
     let url = `https://www.omdbapi.com/?t=${movie}&apikey=${apiKey}`;
     fetch(url)
         .then(res => res.json())
